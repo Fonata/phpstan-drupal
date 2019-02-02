@@ -32,3 +32,6 @@ services:
 	-
 		class: PHPStan\Type\ServiceDynamicReturnTypeExtension
 		tags: [phpstan.broker.dynamicMethodReturnTypeExtension]
+	-
+		class: PHPStan\Reflection\EntityFieldsViaMagic
+		tags: [phpstan.broker.propertiesClassReflectionExtension]
